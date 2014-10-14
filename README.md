@@ -26,3 +26,20 @@ feature(data);
 # complexity measures
 complex(data);
 ```
+
+### Contact
+
+Luis Paulo Faina Garcia - lpfgarcia [at] gmail.com
+
+University of São Paulo - Campus São Carlos
+
+
+### References
+
+[1] K. Bache, M. Lichman, UCI machine learning repository, http://archive.ics.uci.edu/ml (2013).
+
+[2] A. Orriols-Puig, N. Maciá, T. K. Ho, Documentation for the data complexity library in C++, Tech. rep., La Salle - Universitat Ramon Llull (2010).
+
+[3] M. Reif, A comprehensive dataset for evaluating approaches of various meta-learning tasks, in: First International Conference on Pattern Recognition and Methods (ICPRAM), 2012.
+
+[4] R Core Team, R: A Language and Environment for Statistical Computing, R Foundation for Statistical Computing, Vienna, Austria (2014). URL http://www.r-project.org/
