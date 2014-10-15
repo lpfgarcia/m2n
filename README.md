@@ -8,7 +8,8 @@ R version 3.1.0 -- "Spring Dance"
 
 DCoL Library: http://dcol.sourceforge.net/ 
 
-Packages: CORElearn, FNN, infotheo, kknn, rpart, R.utils, rrcov and mvpart.
+Packages: CORElearn, e1071, FNN, foreign, infotheo, rpart, R.utils, rrcov and mvpart.
+
 
 ### Set the experiments
 
@@ -18,13 +19,26 @@ Before start to run the measures we need the binary of the DCoL library. Downloa
 
 Load the files and run the funcions with the data as parameter:
 
+```
+# load the complexity measures
+source("complex.r")
+
+```
+
+```
+# load the characterization measures
+source("characterization.r")
+
+```
+
+Run the measures:
 
 ```
 # characterization measures
-feature(data);
+feature(iris);
 
 # complexity measures
-complex(data);
+complex(iris);
 ```
 
 ### Contact
