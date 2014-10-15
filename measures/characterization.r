@@ -3,6 +3,14 @@
 # Matthias Reif 2012
 # A Comprehensive Dataset for Evaluating Approaches of various Meta-Learning Tasks
 
+require(CORElearn);
+require(e1071);
+require(foreign);
+require(infotheo);
+require(rpart);
+require(R.utils);
+require(rrcov);
+
 
 n_col <- function(x) {
     dim(x)[2]
@@ -595,11 +603,6 @@ compute_landmarking <- function(data, data_preprocessed=NULL) {
     list(result=result, time=time)
 }
 
-feature <- function(data) {
-    aux = combine(compute_grouped_meta_features(data));
-    return(as.numeric(aux));
-}
-
 combine <- function(x) {
     result <- numeric(0)
     for(name in names(x)) {
@@ -674,3 +677,10 @@ compute_grouped_meta_features <- function(data) {
     list(simple=simple, statistical=statistical, inftheo=inftheo, modelbased=modelbased, landmarking=landmarking)
 }
 
+
+feature <- function(data) {
+    aux = combine(compute_grouped_meta_features(data));
+    aux = as.numeric(aux);
+    names(aux) = c("Cls", "Atr", "Num", "Nom", "Spl", "Dim", "NumRate", "NomRate", "SymMin", "SymMax", "SymMan", "SymSd", "SymSum", "ClMin", "ClMax", "ClMean", "ClSd", "Sks", "SksP", "Kts", "KtsP", "AbsC", "CanC", "Fnd", "ClEnt", "NClEnt", "AtrEnt", "NAtrEnt", "JEnt", "MutInf", "EAttr", "NoiSig", "Node", "Leave", "NodeAtr", "NodeIns", "LeafCor", "LMin", "LMax", "LMean", "LSd", "BMin", "BMax", "BMean", "BSd", "AtrMin", "AtrMax", "AtrMean", "AtrSd", "Nb", "StMin", "StMax", "StMean", "StSd", "StMinGain", "StRand", "Nn");
+    return(aux);
+}
