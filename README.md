@@ -10,6 +10,13 @@ DCoL Library: http://dcol.sourceforge.net/
 
 Packages: CORElearn, e1071, FNN, foreign, infotheo, rpart, R.utils, rrcov and mvpart.
 
+Install the packages:
+
+```
+
+install.packages(c("CORElearn", "e1071", "FNN", "foreign", "infotheo", "rpart", "R.utils", "rrcov", "mvpart"))
+
+```
 
 ### Set the experiments
 
