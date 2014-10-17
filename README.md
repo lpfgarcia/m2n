@@ -31,7 +31,7 @@ source("characterization.r")
 
 ```
 
-Runnig the funcions with the data set as parameter:
+Runnig the functions with the data set as parameter:
 
 ```
 # characterization measures
