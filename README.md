@@ -13,7 +13,7 @@ Packages: CORElearn, e1071, FNN, foreign, infotheo, rpart, R.utils, rrcov and mv
 
 ### Set the experiments
 
-Before start to run the measures we need the binary of the DCoL library. Download the code of DCoL Library at http://dcol.sourceforge.net/ and follow the instructions to compile the code in the README file. After that, put the executable dcol in the diretory ~/measures/
+Before start to run the measures we need the binary of the DCoL library. Download the code of DCoL Library at http://dcol.sourceforge.net/ and follow the instructions to compile the code in the README file. After that, put the executable dcol in the directory ~/measures/
 
 ### Run the measures
 
