@@ -47,6 +47,6 @@ complex = function(data) {
 		dcol[,c("F1v", "L1", "L2", "L3")] = cx.replace(name);
 
 	cx.remove(name);
-	return(as.numeric(dcol));
+	return(dcol);
 }
 
