@@ -35,7 +35,7 @@ Run the measures:
 
 ```
 # characterization measures
-feature(iris);
+characterization(iris);
 
 # complexity measures
 complex(iris);
