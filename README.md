@@ -14,7 +14,8 @@ Install the packages:
 
 ```
 
-install.packages(c("CORElearn", "e1071", "FNN", "foreign", "infotheo", "rpart", "R.utils", "rrcov", "mvpart"))
+install.packages(c("CORElearn", "e1071", "FNN", "foreign", "infotheo", 
+"rpart", "R.utils", "rrcov", "mvpart"))
 
 ```
 
