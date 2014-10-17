@@ -17,7 +17,7 @@ Before start to run the measures we need the binary of the DCoL library. Downloa
 
 ### Run the measures
 
-Load the files and run the funcions with the data as parameter:
+Loading the source codes:
 
 ```
 # load the complexity measures
@@ -31,7 +31,7 @@ source("characterization.r")
 
 ```
 
-Run the measures:
+Runnig the funcions with the data set as parameter:
 
 ```
 # characterization measures
