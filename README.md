@@ -44,7 +44,7 @@ Load the source codes:
 
 ```
 # load the complexity measures
-source("base-level/measures/complex.r")
+source("base-level/measures/complexity.r")
 
 ```
 
@@ -70,11 +70,11 @@ In the meta-level folder we have the meta-datasets in the rand and pairwise fold
 
 ### How to load the datasets?
 
-The easiest way to load the datasets (.RData files) is with the dump function:
+The easiest way to load the datasets (.RData files) is with the dget function:
 
 ```
 # load the iris dataset with random noise
-data = read.arff("meta-level/database/rand/iris.RWeka");
+data = dget("meta-level/database/rand/iris.RData");
 
 ```
 

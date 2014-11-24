@@ -678,7 +678,7 @@ compute_grouped_meta_features <- function(data) {
 }
 
 
-characterisation <- function(data) {
+characterization <- function(data) {
     aux = combine(compute_grouped_meta_features(data));
     aux = as.numeric(aux);
     names(aux) = c("Cls", "Atr", "Num", "Nom", "Spl", "Dim", "NumRate", "NomRate", "SymMin", "SymMax", "SymMan", "SymSd", "SymSum", "ClMin", "ClMax", "ClMean", "ClSd", "Sks", "SksP", "Kts", "KtsP", "AbsC", "CanC", "Fnd", "ClEnt", "NClEnt", "AtrEnt", "NAtrEnt", "JEnt", "MutInf", "EAttr", "NoiSig", "Node", "Leave", "NodeAtr", "NodeIns", "LeafCor", "LMin", "LMax", "LMean", "LSd", "BMin", "BMax", "BMean", "BSd", "AtrMin", "AtrMax", "AtrMean", "AtrSd", "Nb", "StMin", "StMax", "StMean", "StSd", "StMinGain", "StRand", "Nn");

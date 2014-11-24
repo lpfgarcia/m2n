@@ -38,7 +38,7 @@ cx.remove = function(name) {
 }
 
 
-complex = function(data) {
+complexity = function(data) {
 
 	name = cx.name(data);
 	dcol = cx.execute(name);
