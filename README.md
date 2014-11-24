@@ -23,6 +23,8 @@ install.packages(c("CORElearn", "e1071", "FNN", "foreign", "infotheo",
 
 Before start to run the measures we need the binary of the DCoL library. Download the code of DCoL Library at http://dcol.sourceforge.net/ and follow the instructions to compile the code in the README file. After that, put the executable (binary file) inside the m2n folder with the name "dcol".
 
+Open the R inside the m2n folder.
+
 ## Base-level
 
 In the base-level folder we have the datasets used in this work, the measures to characterize the datasets and some complementary information about the base-level.
