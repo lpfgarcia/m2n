@@ -21,7 +21,7 @@ install.packages(c("CORElearn", "e1071", "FNN", "foreign", "infotheo",
 
 ## Set the experiments
 
-Before start to run the measures we need the binary of the DCoL library. Download the code of DCoL Library at http://dcol.sourceforge.net/ and follow the instructions to compile the code in the README file. After that, put the executable dcol in the directory base-level/measures/
+Before start to run the measures we need the binary of the DCoL library. Download the code of DCoL Library at http://dcol.sourceforge.net/ and follow the instructions to compile the code in the README file. After that, put the executable (binary file) inside the m2n folder with the name "dcol".
 
 ## Base-level
 
@@ -61,7 +61,7 @@ Run the functions with the data set as parameter:
 characterization(iris);
 
 # complexity measures
-complex(iris);
+complexity(iris);
 ```
 
 ## Meta-level
