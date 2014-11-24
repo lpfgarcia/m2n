@@ -1,6 +1,6 @@
 M2N
 ===
-The experiments are divided in two steps. The first is related to the base-level and the second to the meta-level performance. To run the experiments we need some R packages and the DCoL library. 
+The experiments are divided in two steps. The first is related to the base-level and the second to the meta-level performance. To run the measures we need some R packages and the DCoL library. 
 
 ### Technical Requirements
 
@@ -21,21 +21,36 @@ install.packages(c("CORElearn", "e1071", "FNN", "foreign", "infotheo",
 
 ### Set the experiments
 
-Before start to run the measures we need the binary of the DCoL library. Download the code of DCoL Library at http://dcol.sourceforge.net/ and follow the instructions to compile the code in the README file. After that, put the executable dcol in the directory ~/measures/
+Before start to run the measures we need the binary of the DCoL library. Download the code of DCoL Library at http://dcol.sourceforge.net/ and follow the instructions to compile the code in the README file. After that, put the executable dcol in the directory ~/base-level/measures/
 
-### Run the measures
+## Base-level
+
+In the base-level folder we have the datasets used in this work, the measures to characterize the datasets and some complementary information about the base-level.
+
+### How to load the datasets?
+
+The easiest way to load the datasets (arff files) is with the packages RWeka or foreign:
+
+```
+# load the iris dataset
+require("foreign")
+data = read.arff("~/base-level/database/iris.arff");
+
+```
+
+### How to run the measures?
 
 Load the source codes:
 
 ```
 # load the complexity measures
-source("complex.r")
+source("~/base-level/measures/complex.r")
 
 ```
 
 ```
 # load the characterization measures
-source("characterization.r")
+source("~/base-level/measures/characterization.r")
 
 ```
 
@@ -47,6 +62,20 @@ characterization(iris);
 
 # complexity measures
 complex(iris);
+```
+
+## Meta-level
+
+In the meta-level folder we have the meta-datasets in the rand and pairwise folder and some complementary information about the base-level.
+
+### How to load the datasets?
+
+The easiest way to load the datasets (.RData files) is with the dump function:
+
+```
+# load the iris dataset with random noise
+data = read.arff("~/meta-level/database/rand/iris.RWeka");
+
 ```
 
 ### Contact
