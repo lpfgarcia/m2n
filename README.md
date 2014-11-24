@@ -21,7 +21,7 @@ install.packages(c("CORElearn", "e1071", "FNN", "foreign", "infotheo",
 
 ## Set the experiments
 
-Before start to run the measures we need the binary of the DCoL library. Download the code of DCoL Library at http://dcol.sourceforge.net/ and follow the instructions to compile the code in the README file. After that, put the executable dcol in the directory ~/base-level/measures/
+Before start to run the measures we need the binary of the DCoL library. Download the code of DCoL Library at http://dcol.sourceforge.net/ and follow the instructions to compile the code in the README file. After that, put the executable dcol in the directory base-level/measures/
 
 ## Base-level
 
@@ -34,7 +34,7 @@ The easiest way to load the datasets (arff files) is with the packages RWeka or 
 ```
 # load the iris dataset
 require("foreign")
-data = read.arff("~/base-level/database/iris.arff");
+data = read.arff("base-level/database/iris.arff");
 
 ```
 
@@ -44,13 +44,13 @@ Load the source codes:
 
 ```
 # load the complexity measures
-source("~/base-level/measures/complex.r")
+source("base-level/measures/complex.r")
 
 ```
 
 ```
 # load the characterization measures
-source("~/base-level/measures/characterization.r")
+source("base-level/measures/characterization.r")
 
 ```
 
@@ -74,7 +74,7 @@ The easiest way to load the datasets (.RData files) is with the dump function:
 
 ```
 # load the iris dataset with random noise
-data = read.arff("~/meta-level/database/rand/iris.RWeka");
+data = read.arff("meta-level/database/rand/iris.RWeka");
 
 ```
 
